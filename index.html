@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff0f5" />
+  <title>For My Pondatii 💗</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="petals" aria-hidden="true"></div>
+  <div id="sparkles" aria-hidden="true"></div>
+  <div class="sound-bar"><button id="soundBtn" class="tiny-btn" aria-pressed="false">♫ Turn on cute music</button></div>
+  <main>
+    <div class="progress" aria-label="Story progress"><span id="progressFill"></span></div>
+    <section class="scene active" data-scene="0">
+      <div class="small-label">a tiny little corner of the internet, just for you</div>
+      <div class="hero-emoji floating">🧸💐</div>
+      <h1>Hey, <em>my favorite girl.</em> 💗</h1>
+      <p>I made you something because a regular “I'm sorry” text didn't feel like enough.</p>
+      <p class="whisper">P.S. Please collect every imaginary flower I throw your way 🌷</p>
+      <button class="primary next">Open your little surprise <span>→</span></button>
+    </section>
+    <section class="scene" data-scene="1">
+      <div class="small-label">first, the part that matters most</div>
+      <div class="hero-emoji floating">🥺💌</div>
+      <h1>I'm really, <em>really sorry.</em></h1>
+      <div class="paper-note"><p>I fell asleep yesterday, and I left you waiting and wondering when I'd be back. I know that's frustrating, especially after everything we've been working through.</p><p>I should've communicated better. You deserved a heads-up, not silence. I'm sorry for letting you down.</p><p>I'm so happy we're finding our way back to each other. I don't want to take that for granted, and I want my actions to show you how much you mean to me. 💗</p></div>
+      <button class="primary next">I have more to say →</button>
+    </section>
+    <section class="scene" data-scene="2">
+      <div class="small-label">delivery for one very special human</div>
+      <div class="hero-emoji floating">🎁🧸</div>
+      <h1>Special delivery <em>for you!</em></h1>
+      <p>Tap each gift to unwrap it. I picked the cutest things in the universe. Obviously.</p>
+      <div class="gift-grid">
+        <button class="gift" data-message="A teddy to hug whenever I can't be there in person 🧸"><span>🎁</span><strong>Gift #1</strong><small>tap me!</small></button>
+        <button class="gift" data-message="A whole bouquet, because one flower would never be enough for you 💐"><span>🎁</span><strong>Gift #2</strong><small>tap me!</small></button>
+        <button class="gift" data-message="Gummy bears because being sweet is basically your superpower 🐻🍬"><span>🎁</span><strong>Gift #3</strong><small>tap me!</small></button>
+        <button class="gift" data-message="Chocolates, because every love story needs a little extra sweetness 🍫"><span>🎁</span><strong>Gift #4</strong><small>tap me!</small></button>
+      </div>
+      <p id="giftMessage" class="gift-message" aria-live="polite">Four presents have your name on them…</p>
+      <button class="primary next">Keep going, cutie →</button>
+    </section>
+    <section class="scene" data-scene="3">
+      <div class="small-label">a tiny remo-inspired moment 🎬</div>
+      <div class="film-frame"><span class="film-top">♡ OUR ROM-COM MOMENT ♡</span><div class="hero-emoji floating">🎬🌸💕</div><p class="film-line">“Yeppa ok solla pora?”</p><p class="film-sub">Me, dramatically waiting like I'm in <em>Remo</em> 😭</p></div>
+      <h1>My favorite <em>plot twist?</em></h1>
+      <p>Somehow, in a world full of people, I get to call <strong>you</strong> my person. And yes, I'm going to keep being ridiculously cheesy about it.</p>
+      <button class="primary next">One more surprise →</button>
+    </section>
+    <section class="scene" data-scene="4">
+      <div class="small-label">officially issued by your personal teddy bear</div>
+      <div class="hero-emoji floating">🎟️🐻</div>
+      <h1>Your very own <em>love coupons!</em></h1>
+      <p>No expiration date. Redeem whenever you want. Tap a coupon to claim it!</p>
+      <div class="coupon-list">
+        <button class="coupon"><span class="coupon-icon">🫂</span><span><strong>Unlimited cuddle time</strong><small>Redeem for one extra-cozy cuddle session.</small></span><span class="stamp">REDEEM</span></button>
+        <button class="coupon"><span class="coupon-icon">🍿</span><span><strong>You pick the movie</strong><small>I'll bring the snacks. No complaining about your pick.</small></span><span class="stamp">REDEEM</span></button>
+        <button class="coupon"><span class="coupon-icon">🧋</span><span><strong>Your favorite treat run</strong><small>Gummy bears, chocolate, or your favorite drink.</small></span><span class="stamp">REDEEM</span></button>
+        <button class="coupon"><span class="coupon-icon">👑</span><span><strong>Princess treatment day</strong><small>Your choice of cozy, cute plans together.</small></span><span class="stamp">REDEEM</span></button>
+        <button class="coupon"><span class="coupon-icon">💌</span><span><strong>One heartfelt love letter</strong><small>Handwritten, extra cheesy, made just for you.</small></span><span class="stamp">REDEEM</span></button>
+      </div>
+      <p class="whisper">Screenshot any coupon to remind me 💗</p>
+      <button class="primary next">The grand finale →</button>
+    </section>
+    <section class="scene finale" data-scene="5">
+      <div class="small-label">the most important thing I wanted to say</div>
+      <div class="bouquet floating">💐</div>
+      <div class="treats">🧸 🌹 🍫 🐻🍬 🌷 🧸</div>
+      <h1 class="final-title">I LOVE YOU<br /><em>DI PONDATII</em><br />❤️❤️</h1>
+      <p>Every flower, every teddy bear, every gummy bear… all just tiny reminders that you're so loved.</p>
+      <div class="final-note">I can't promise to be perfect, but I can promise to keep trying, communicating, and showing up for us. Thank you for being you. 💖</div>
+      <button id="moreFlowers" class="primary">Shower me in more flowers 🌸</button>
+      <button id="restart" class="text-btn">Start our little story again ↺</button>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <footer>made with lots of love, a little drama & approximately one million flowers ♡</footer>
+  <script src="script.js"></script>
+</body>
+</html>
